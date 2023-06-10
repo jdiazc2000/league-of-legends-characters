@@ -1,0 +1,30 @@
+#banner{
+    width: 2rem;
+}
+
+header{
+    width: 100%;
+    display: grid;
+    height: 50vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    article{
+        height: 100%;
+        display: grid;
+        place-content: center;
+
+        h1{
+            font-size: 5rem;
+            color: #C89B3C;
+        }
+
+        p{
+            font-size: 3rem;
+            color: #a58031;
+            text-transform: capitalize;
+        }
+    }
+}
