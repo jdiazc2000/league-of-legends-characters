@@ -11,6 +11,7 @@ export class ChampionPageComponent implements OnInit {
   championName!: string;
   championInfo: any; 
   championBannerUrl!: string 
+  championSquareUrl!: string
 
   constructor(
     private championService: ChampionsService,
@@ -26,6 +27,7 @@ export class ChampionPageComponent implements OnInit {
         (response) => {
           this.championInfo = Object.values(response.data);
           this.championBannerUrl = 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + this.championName +'_0.jpg'
+          this.championSquareUrl = 'http://ddragon.leagueoflegends.com/cdn/13.11.1/img/champion/' + this.championName + '.png'
           console.log(this.championInfo)
         },
         (error) => {
