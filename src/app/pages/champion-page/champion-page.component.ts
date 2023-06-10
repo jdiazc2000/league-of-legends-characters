@@ -31,7 +31,7 @@ export class ChampionPageComponent implements OnInit {
           console.log(this.championInfo)
         },
         (error) => {
-          this.router.navigate(['/welcome'])
+          this.router.navigate(['/'])
           console.log('Campeón no encontrado')
         }
       );

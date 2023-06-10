@@ -5,7 +5,7 @@ import { ChampionPageComponent } from './pages/champion-page/champion-page.compo
 
 const routes: Routes = [
   {
-    path:'welcome',
+    path:'',
     component:WelcomePageComponent
   },
   {
@@ -14,11 +14,6 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/welcome',
-    pathMatch: 'full'
-  },
-  {
-    path: '**',
     redirectTo: '/welcome',
     pathMatch: 'full'
   }
