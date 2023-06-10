@@ -11,6 +11,16 @@ const routes: Routes = [
   {
     path:'champion/:ChampionName',
     component: ChampionPageComponent
+  },
+  {
+    path: '',
+    redirectTo: '/welcome',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: '/welcome',
+    pathMatch: 'full'
   }
 ];
 
