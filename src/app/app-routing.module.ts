@@ -13,8 +13,8 @@ const routes: Routes = [
     component: ChampionPageComponent
   },
   {
-    path: '',
-    redirectTo: '/welcome',
+    path: '**',
+    redirectTo: '/',
     pathMatch: 'full'
   }
 ];
